@@ -8,6 +8,7 @@ from .utils.geometry_creation import create_transect, create_2d_grid, insert_fix
 from .utils.estimate_timestep import estimate_timestep
 from .io import io
 from . import solvers
+from .solvers.solver_AD import solver_AD
 from .import tools
 
 __all__ = [
@@ -25,6 +26,7 @@ __all__ = [
     "full_ricker_wavelet",
     "Sources",
     "solvers",
+    "solver_AD",
     "plots",
     "tools",
 ]

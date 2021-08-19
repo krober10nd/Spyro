@@ -26,7 +26,6 @@ def forward(
     """Secord-order in time fully-explicit scheme
     with implementation of a Perfectly Matched Layer (PML) using
     CG FEM with or without higher order mass lumping (KMV type elements).
-
     Parameters
     ----------
     model: Python `dictionary`
@@ -46,14 +45,12 @@ def forward(
         The source number you wish to simulate
     output: `boolean`, optional
         Whether or not to write results to pvd files.
-
     Returns
     -------
     usol: list of Firedrake.Functions
         The full field solution at `fspool` timesteps
     usol_recv: array-like
         The solution interpolated to the receivers at all timesteps
-
     """
 
     method = model["opts"]["method"]

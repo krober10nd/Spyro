@@ -11,7 +11,6 @@ class Sources(spyro.receivers.Receivers.Receivers):
     def __init__(self, model, mesh, V, my_ensemble):
         """Initializes class and gets all receiver parameters from
         input file.
-
         Parameters
         ----------
         model: `dictionary`
@@ -22,11 +21,9 @@ class Sources(spyro.receivers.Receivers.Receivers):
             The space of the finite elements
         my_ensemble: Firedrake.ensemble_communicator
             An ensemble communicator
-
         Returns
         -------
         Receivers: :class: 'Receiver' object
-
         """
 
         self.mesh = mesh
